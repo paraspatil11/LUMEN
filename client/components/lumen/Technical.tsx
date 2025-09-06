@@ -449,7 +449,7 @@ export default function Technical() {
                     Clinical‑aware imaging (PEARL): geometry‑aware low‑dose CT reconstruction producing uncertainty maps for safer follow‑up decisions — beyond simple image captioning.
                   </li>
                   <li>
-                    Structured lab report parsing & evaluation: Donut/OCR + reference‑range comparison that returns fields, risk flags and suggested follow‑ups rather than freeform summaries.
+                    Structured lab report parsing & evaluation: Donut/OCR + reference���range comparison that returns fields, risk flags and suggested follow‑ups rather than freeform summaries.
                   </li>
                   <li>
                     Grounded government scheme retrieval: embeddings + small vector DB to match user queries to state/national schemes with eligibility and helpline details.
@@ -473,46 +473,13 @@ export default function Technical() {
           <div className="grid lg:grid-cols-1 gap-6">
             <Card title="Tech Stack Cloud">
               <div className="space-y-4">
-                <div className="grid gap-2">
-                  <div>
-                    <strong>Main AI Platform</strong>
-                    <div className="text-sm text-muted-foreground">OpenAI (GPT-4, Whisper, DALL·E, Embeddings)</div>
-                  </div>
-
-                  <div>
-                    <strong>Prototype / Alternatives</strong>
-                    <div className="text-sm text-muted-foreground">Hugging Face Models (Indic-GPT, Donut, Whisper-small, BLIP, Stable Diffusion)</div>
-                  </div>
-
-                  <div>
-                    <strong>Student Innovation</strong>
-                    <div className="text-sm text-muted-foreground">PEARL CT (PerX2CT + XctDiff + SAX-NeRF pipeline)</div>
-                  </div>
-
-                  <div>
-                    <strong>Frontend</strong>
-                    <div className="text-sm text-muted-foreground">React (Vite) • Tailwind CSS + ShadCN UI + Framer Motion</div>
-                  </div>
-
-                  <div>
-                    <strong>Backend / Middleware</strong>
-                    <div className="text-sm text-muted-foreground">Node.js + Express</div>
-                  </div>
-
-                  <div>
-                    <strong>Vector Database</strong>
-                    <div className="text-sm text-muted-foreground">FAISS / pgvector (prototype)</div>
-                  </div>
-
-                  <div>
-                    <strong>Deployment</strong>
-                    <div className="text-sm text-muted-foreground">Netlify (frontend) • Render / Railway (backend & APIs, future)</div>
-                  </div>
-
-                  <div>
-                    <strong>Data Handling</strong>
-                    <div className="text-sm text-muted-foreground">OCR (Donut / Tesseract) • Firebase / Supabase (prototype storage & auth)</div>
-                  </div>
+                <div>
+                  <ul className="list-disc pl-5 space-y-2">
+                    <li className="text-sm">Main AI Platform: OpenAI (GPT-4, Whisper, DALL·E)</li>
+                    <li className="text-sm">Prototype / Alternatives: Hugging Face models (Indic‑GPT, Donut, BLIP)</li>
+                    <li className="text-sm">Student Innovation: PEARL CT (PerX2CT + XctDiff + SAX‑NeRF)</li>
+                    <li className="text-sm">Deployment & Data: Netlify / Render / Railway, Firebase / Supabase, Vector DB (FAISS / pgvector)</li>
+                  </ul>
                 </div>
 
                 <div className="flex justify-center">
