@@ -390,6 +390,40 @@ export default function Technical() {
         </div>
 
         {/* Team LUMEN Section */}
+        <div className="mt-10">
+          <div className="grid lg:grid-cols-1 gap-6">
+            <Card title="Novelty & Differentiators">
+              <div className="space-y-2">
+                <p className="text-sm">
+                  <BookOpen className="inline mr-2" /> LUMEN differs from generic AI models in key ways—see <a href="/README.md" className="text-brand-blue underline">README.md</a> for the full project overview.
+                </p>
+                <ul className="list-disc pl-5 space-y-1">
+                  <li>
+                    Multimodal, localized triage: voice/text/image inputs with regional language prompts and voice-first UX (not just English-only chat models).
+                  </li>
+                  <li>
+                    Clinical‑aware imaging (PEARL): geometry‑aware low‑dose CT reconstruction producing uncertainty maps for safer follow‑up decisions — beyond simple image captioning.
+                  </li>
+                  <li>
+                    Structured lab report parsing & evaluation: Donut/OCR + reference‑range comparison that returns fields, risk flags and suggested follow‑ups rather than freeform summaries.
+                  </li>
+                  <li>
+                    Grounded government scheme retrieval: embeddings + small vector DB to match user queries to state/national schemes with eligibility and helpline details.
+                  </li>
+                  <li>
+                    Safety‑first pipelines: PII minimization, content filters, human‑in‑the‑loop escalation for high‑risk outputs and explicit non‑diagnostic disclaimers.
+                  </li>
+                  <li>
+                    Extensible service mesh: lightweight Express endpoints and optional Python FastAPI services for heavier, on‑device or server‑side ML workloads.
+                  </li>
+                </ul>
+                <p className="text-xs text-muted-foreground">
+                  Icons and vectors across the site emphasize the operational differences (retrieval, uncertainty maps, structured fields). Refer to <code>/README.md</code> for citations and detailed comparisons.
+                </p>
+              </div>
+            </Card>
+          </div>
+        </div>
         <div className="mt-20">
           <div className="relative flex justify-center w-full overflow-x-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-[1600px] px-6 justify-items-center">
