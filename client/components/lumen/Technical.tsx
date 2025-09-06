@@ -449,7 +449,7 @@ export default function Technical() {
                     Clinical‑aware imaging (PEARL): geometry‑aware low‑dose CT reconstruction producing uncertainty maps for safer follow‑up decisions — beyond simple image captioning.
                   </li>
                   <li>
-                    Structured lab report parsing & evaluation: Donut/OCR + reference���range comparison that returns fields, risk flags and suggested follow‑ups rather than freeform summaries.
+                    Structured lab report parsing & evaluation: Donut/OCR + reference‑range comparison that returns fields, risk flags and suggested follow‑ups rather than freeform summaries.
                   </li>
                   <li>
                     Grounded government scheme retrieval: embeddings + small vector DB to match user queries to state/national schemes with eligibility and helpline details.
@@ -484,6 +484,85 @@ export default function Technical() {
 
                 <div className="flex justify-center">
                   <TechStackGrid />
+                </div>
+              </div>
+            </Card>
+          </div>
+        </div>
+
+        <div className="mt-6">
+          <div className="grid lg:grid-cols-1 gap-6">
+            <Card title="OpenAI Models Used">
+              <div className="p-2">
+                <div className="grid md:grid-cols-2 gap-4 items-start">
+                  <div>
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2Fe15e28af565249a28e9186f98d17e5d6%2Ff48c2a15a0424ea68a58071a67130bbe?format=webp&width=800"
+                      alt="Models reference"
+                      className="w-full rounded-md border border-border shadow-sm"
+                    />
+                  </div>
+
+                  <div>
+                    <div className="overflow-x-auto">
+                      <table className="w-full text-sm table-auto">
+                        <thead>
+                          <tr className="text-left text-xs text-muted-foreground">
+                            <th className="px-3 py-2">Feature</th>
+                            <th className="px-3 py-2">OpenAI Model / Tool</th>
+                            <th className="px-3 py-2">Prototype Model (Hugging Face)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr className="border-t">
+                            <td className="px-3 py-2 align-top">Multilingual Chatbot (Core Conversations)</td>
+                            <td className="px-3 py-2 align-top">GPT-4 / GPT-5 (chat completion)</td>
+                            <td className="px-3 py-2 align-top"><code className="rounded px-1 py-0.5 bg-muted text-xs">ai4bharat/indic-gpt</code></td>
+                          </tr>
+
+                          <tr className="border-t">
+                            <td className="px-3 py-2 align-top">Voice Input (Speech → Text)</td>
+                            <td className="px-3 py-2 align-top">Whisper (ASR)</td>
+                            <td className="px-3 py-2 align-top"><code className="rounded px-1 py-0.5 bg-muted text-xs">openai/whisper-small</code></td>
+                          </tr>
+
+                          <tr className="border-t">
+                            <td className="px-3 py-2 align-top">Voice Output (Text → Speech)</td>
+                            <td className="px-3 py-2 align-top">OpenAI TTS (text-to-speech)</td>
+                            <td className="px-3 py-2 align-top"><code className="rounded px-1 py-0.5 bg-muted text-xs">coqui/XTTS-v2</code></td>
+                          </tr>
+
+                          <tr className="border-t">
+                            <td className="px-3 py-2 align-top">Lab Report Analyzer (OCR + Interpretation)</td>
+                            <td className="px-3 py-2 align-top">GPT-4 / GPT-5 (explanation + follow-up)</td>
+                            <td className="px-3 py-2 align-top"><code className="rounded px-1 py-0.5 bg-muted text-xs">naver-clova-ix/donut-base-finetuned-docvqa</code></td>
+                          </tr>
+
+                          <tr className="border-t">
+                            <td className="px-3 py-2 align-top">Image-based Dermatology / Skin Issues</td>
+                            <td className="px-3 py-2 align-top">GPT-4-Vision (image understanding + summaries)</td>
+                            <td className="px-3 py-2 align-top"><code className="rounded px-1 py-0.5 bg-muted text-xs">Salesforce/blip-image-captioning-base</code></td>
+                          </tr>
+
+                          <tr className="border-t">
+                            <td className="px-3 py-2 align-top">Emergency Triage & First Aid Education</td>
+                            <td className="px-3 py-2 align-top">GPT-4 / GPT-5 (retrieval-grounded responses)</td>
+                            <td className="px-3 py-2 align-top"><code className="rounded px-1 py-0.5 bg-muted text-xs">sentence-transformers/all-mpnet-base-v2</code></td>
+                          </tr>
+
+                          <tr className="border-t">
+                            <td className="px-3 py-2 align-top">Government Schemes & Benefits Assistant</td>
+                            <td className="px-3 py-2 align-top">GPT-4 / GPT-5 (retrieval-grounded responses)</td>
+                            <td className="px-3 py-2 align-top"><code className="rounded px-1 py-0.5 bg-muted text-xs">sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2</code></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <p className="text-xs text-muted-foreground mt-3">
+                      Note: For the prototype phase we currently use free Hugging Face models (listed in the third column) where possible. Production may switch to commercial OpenAI models or hosted solutions for reliability and latency.
+                    </p>
+                  </div>
                 </div>
               </div>
             </Card>
