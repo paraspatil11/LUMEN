@@ -91,7 +91,7 @@ function BeamShowcase() {
             ref={userRef}
             className="ml-2 size-16 rounded-full bg-secondary border border-border shadow grid place-items-center"
           >
-            <UserIcon className="text-brand-blue" />
+            <img src="https://cdn.simpleicons.org/openai/1B8EE6" alt="OpenAI" className="h-6 w-6" />
           </div>
           <span className="mt-2 text-sm font-medium">User</span>
         </div>
@@ -472,8 +472,52 @@ export default function Technical() {
         <div className="mt-6">
           <div className="grid lg:grid-cols-1 gap-6">
             <Card title="Tech Stack Cloud">
-              <div className="flex justify-center">
-                <IconCloudDemo />
+              <div className="space-y-4">
+                <div className="grid gap-2">
+                  <div>
+                    <strong>Main AI Platform</strong>
+                    <div className="text-sm text-muted-foreground">OpenAI (GPT-4, Whisper, DALL·E, Embeddings)</div>
+                  </div>
+
+                  <div>
+                    <strong>Prototype / Alternatives</strong>
+                    <div className="text-sm text-muted-foreground">Hugging Face Models (Indic-GPT, Donut, Whisper-small, BLIP, Stable Diffusion)</div>
+                  </div>
+
+                  <div>
+                    <strong>Student Innovation</strong>
+                    <div className="text-sm text-muted-foreground">PEARL CT (PerX2CT + XctDiff + SAX-NeRF pipeline)</div>
+                  </div>
+
+                  <div>
+                    <strong>Frontend</strong>
+                    <div className="text-sm text-muted-foreground">React (Vite) • Tailwind CSS + ShadCN UI + Framer Motion</div>
+                  </div>
+
+                  <div>
+                    <strong>Backend / Middleware</strong>
+                    <div className="text-sm text-muted-foreground">Node.js + Express</div>
+                  </div>
+
+                  <div>
+                    <strong>Vector Database</strong>
+                    <div className="text-sm text-muted-foreground">FAISS / pgvector (prototype)</div>
+                  </div>
+
+                  <div>
+                    <strong>Deployment</strong>
+                    <div className="text-sm text-muted-foreground">Netlify (frontend) • Render / Railway (backend & APIs, future)</div>
+                  </div>
+
+                  <div>
+                    <strong>Data Handling</strong>
+                    <div className="text-sm text-muted-foreground">OCR (Donut / Tesseract) • Firebase / Supabase (prototype storage & auth)</div>
+                  </div>
+                </div>
+
+                <div className="flex justify-center">
+                  <IconCloudDemo />
+                </div>
               </div>
             </Card>
           </div>
