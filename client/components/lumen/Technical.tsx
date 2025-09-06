@@ -17,6 +17,7 @@ import {
 import ZoomableImage from "./ZoomableImage";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { AnimatedBeam } from "./AnimatedBeam";
+import DevProfileCard from "./DevProfileCard";
 
 function Card({
   title,
@@ -391,27 +392,28 @@ export default function Technical() {
         {/* Team LUMEN Section */}
         <div className="mt-20">
           <div className="relative flex justify-center w-full overflow-x-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-10 max-w-[1600px] px-6 justify-items-center">
-              <TeamCard
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-[1600px] px-6 justify-items-center">
+              <DevProfileCard
                 name="Sanchit"
                 role="Full Stack Developer"
                 photo="https://cdn.builder.io/api/v1/image/assets%2F445519f4dc2147579ea6fb2243527f29%2F4587d99ad8074e819191cef9f9a8a2c7?format=webp&width=800"
                 github="https://github.com/sanchit1606"
                 linkedin="https://www.linkedin.com/in/sanchit1606/"
               />
-              <TeamCard
+              <DevProfileCard
                 name="Priyal"
                 role="AI/ML Engineer"
                 github="https://github.com/priyal-username"
                 linkedin="https://www.linkedin.com/in/priyal-profile/"
               />
-              <TeamCard
+              <DevProfileCard
                 name="Paras"
                 role="Backend Developer"
-                github="https://github.com/paras-username"
-                linkedin="https://www.linkedin.com/in/paras-profile/"
+                photo="https://cdn.builder.io/api/v1/image/assets%2Fe15e28af565249a28e9186f98d17e5d6%2F724f568f937d459e956850b221bb91ac?format=webp&width=800"
+                github="https://github.com/paraspatil11"
+                linkedin="https://linkedin.com/in/ParasPatil"
               />
-              <TeamCard
+              <DevProfileCard
                 name="Kshitij"
                 role="Frontend Developer"
                 photo="https://cdn.builder.io/api/v1/image/assets%2F445519f4dc2147579ea6fb2243527f29%2Fad5f0becc276472fbcdb59aafec6d377?format=webp&width=800"
