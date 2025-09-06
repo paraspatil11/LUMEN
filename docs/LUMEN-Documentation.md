@@ -58,6 +58,7 @@ LUMEN addresses this with a unified assistant that triages symptoms, explains di
 - Multilingual UX and foundations for voice input/output.
 
 Code references:
+
 - Client pages: `./client/pages/*.tsx` (e.g., `Index.tsx`, `Technical.tsx`, `Developers.tsx`).
 - Lumen components: `./client/components/lumen/*`.
 - Express API: `./server/*`.
@@ -136,6 +137,7 @@ The repository ships a Vite + React SPA with an Express API. An optional Python 
   - Returns `{ embedding: number[], dim: number }`.
 
 Notes:
+
 - All Express endpoints require `HF_API_KEY`.
 - Upload limits: 10MB (multer in-memory storage).
 
@@ -155,6 +157,7 @@ Notes:
 - GET `/api/models/info` → available models and supported languages.
 
 See:
+
 - `./backend/main.py`
 - `./backend/lumen_services.py`
 - `./backend/lumen_models.py`
@@ -169,6 +172,7 @@ See:
 ## 8. Setup & Development
 
 Requirements:
+
 - Node.js 18+
 - pnpm (see `package.json`)
 
