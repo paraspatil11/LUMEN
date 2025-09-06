@@ -123,11 +123,13 @@
     @apply rounded-2xl bg-card/80 backdrop-blur shadow-smooth border border-border;
   }
   .font-surgena {
-    font-family: "Surgena", "Inter", "Roboto", "Open Sans", ui-sans-serif,
-      system-ui, sans-serif;
+    font-family:
+      "Surgena", "Inter", "Roboto", "Open Sans", ui-sans-serif, system-ui,
+      sans-serif;
   }
   .gradient-orb {
-    background: radial-gradient(
+    background:
+      radial-gradient(
         ellipse at 30% 30%,
         hsla(var(--brand-teal), 0.45),
         transparent 45%
@@ -145,9 +147,18 @@
     filter: drop-shadow(0 12px 30px hsla(var(--brand-blue), 0.35));
   }
   .wave-bg {
-    background: linear-gradient(90deg, hsla(var(--brand-sea), 0.4), transparent 30%),
-      radial-gradient(1200px 400px at 10% 10%, hsla(var(--brand-blue), 0.1), transparent 60%),
-      radial-gradient(800px 300px at 90% 20%, hsla(var(--brand-teal), 0.12), transparent 60%);
+    background:
+      linear-gradient(90deg, hsla(var(--brand-sea), 0.4), transparent 30%),
+      radial-gradient(
+        1200px 400px at 10% 10%,
+        hsla(var(--brand-blue), 0.1),
+        transparent 60%
+      ),
+      radial-gradient(
+        800px 300px at 90% 20%,
+        hsla(var(--brand-teal), 0.12),
+        transparent 60%
+      );
     mask: linear-gradient(to bottom, black 60%, transparent 100%);
   }
 }
@@ -196,11 +207,18 @@
 /* Video-like animated text fill for headings */
 .video-text {
   color: transparent;
-  background: radial-gradient(60% 60% at 20% 20%, #22d3ee 0%, transparent 60%),
+  background:
+    radial-gradient(60% 60% at 20% 20%, #22d3ee 0%, transparent 60%),
     radial-gradient(50% 50% at 80% 40%, #1b8ee6 0%, transparent 60%),
     conic-gradient(from 0deg, #22d3ee, #1b8ee6, #22d3ee);
-  background-size: 140% 140%, 140% 140%, 200% 200%;
-  background-position: 0% 50%, 100% 50%, 0% 50%;
+  background-size:
+    140% 140%,
+    140% 140%,
+    200% 200%;
+  background-position:
+    0% 50%,
+    100% 50%,
+    0% 50%;
   -webkit-background-clip: text;
   background-clip: text;
   animation: video-text-shift 6s ease-in-out infinite alternate;
@@ -208,13 +226,22 @@
 }
 @keyframes video-text-shift {
   0% {
-    background-position: 0% 50%, 100% 50%, 0% 50%;
+    background-position:
+      0% 50%,
+      100% 50%,
+      0% 50%;
   }
   50% {
-    background-position: 50% 60%, 50% 40%, 100% 50%;
+    background-position:
+      50% 60%,
+      50% 40%,
+      100% 50%;
   }
   100% {
-    background-position: 100% 50%, 0% 50%, 0% 50%;
+    background-position:
+      100% 50%,
+      0% 50%,
+      0% 50%;
   }
 }
 
@@ -641,9 +668,11 @@ a.learn-more {
   .devcard-card {
     width: 190px;
     height: 254px;
-    background: #FAF1F6;
+    background: #faf1f6;
     padding: 2rem 1.5rem;
-    transition: box-shadow .3s ease, transform .2s ease;
+    transition:
+      box-shadow 0.3s ease,
+      transform 0.2s ease;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -656,11 +685,11 @@ a.learn-more {
     align-items: center;
   }
   .devcard-avatar {
-    background: radial-gradient(#A8A6B6,#B3B1BF,#BDBBC7,#C5C4CE,#E2E2E7);
+    background: radial-gradient(#a8a6b6, #b3b1bf, #bdbbc7, #c5c4ce, #e2e2e7);
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    transition: transform .2s ease;
+    transition: transform 0.2s ease;
     display: grid;
     place-items: center;
     overflow: hidden;
@@ -672,17 +701,58 @@ a.learn-more {
     object-position: top;
     border-radius: 50%;
   }
-  .devcard-avatar-fallback { height: 80px; width: 100px; fill: #515F65; }
+  .devcard-avatar-fallback {
+    height: 80px;
+    width: 100px;
+    fill: #515f65;
+  }
 
-  .devcard-social { display: flex; justify-content: space-around; width: 190px; margin-top: 10%; text-align: center; }
-  .devcard-social-icon { list-style: none; color: #515F65; font-size: 0.5em; display: flex; flex-direction: column; align-items: center; transition: transform .2s ease; }
-  .devcard-social-icon svg { display: block; height: 20px; width: 20px; fill: #515F65; cursor: pointer; }
-  .devcard-social-icon:hover { transform: scale(2.0); }
+  .devcard-social {
+    display: flex;
+    justify-content: space-around;
+    width: 190px;
+    margin-top: 10%;
+    text-align: center;
+  }
+  .devcard-social-icon {
+    list-style: none;
+    color: #515f65;
+    font-size: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease;
+  }
+  .devcard-social-icon svg {
+    display: block;
+    height: 20px;
+    width: 20px;
+    fill: #515f65;
+    cursor: pointer;
+  }
+  .devcard-social-icon:hover {
+    transform: scale(2);
+  }
 
-  .devcard-title { color: #1b1b1b; font-size: 1.5em; font-weight: 600; line-height: 2rem; margin-top: 5px; }
-  .devcard-subtitle { color: #7e93a0; font-size: 1.0em; }
+  .devcard-title {
+    color: #1b1b1b;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 2rem;
+    margin-top: 5px;
+  }
+  .devcard-subtitle {
+    color: #7e93a0;
+    font-size: 1em;
+  }
 
-  .devcard-card:hover { box-shadow: 0 10px 50px #23232333; }
-  .devcard-card:hover .devcard-info { transform: translateY(-5%); }
-  .devcard-avatar:hover { transform: scale(1.1); }
+  .devcard-card:hover {
+    box-shadow: 0 10px 50px #23232333;
+  }
+  .devcard-card:hover .devcard-info {
+    transform: translateY(-5%);
+  }
+  .devcard-avatar:hover {
+    transform: scale(1.1);
+  }
 }
