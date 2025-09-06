@@ -468,6 +468,17 @@ export default function Technical() {
             </Card>
           </div>
         </div>
+
+        <div className="mt-6">
+          <div className="grid lg:grid-cols-1 gap-6">
+            <Card title="Tech Stack Cloud">
+              <div className="flex justify-center">
+                <IconCloudDemo />
+              </div>
+            </Card>
+          </div>
+        </div>
+
         <div className="mt-20">
           <div className="relative flex justify-center w-full overflow-x-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-[1600px] px-6 justify-items-center">
