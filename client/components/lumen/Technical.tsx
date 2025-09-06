@@ -18,6 +18,7 @@ import ZoomableImage from "./ZoomableImage";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { AnimatedBeam } from "./AnimatedBeam";
 import DevProfileCard from "./DevProfileCard";
+import { IconCloud } from "@/components/magicui/icon-cloud";
 
 function Card({
   title,
@@ -129,6 +130,49 @@ function BeamShowcase() {
           </div>
         </div>
       </div>
+    </div>
+  );
+}
+
+function IconCloudDemo() {
+  const slugs = [
+    "typescript",
+    "javascript",
+    "dart",
+    "java",
+    "react",
+    "flutter",
+    "android",
+    "html5",
+    "css3",
+    "nodedotjs",
+    "express",
+    "nextdotjs",
+    "prisma",
+    "amazonaws",
+    "postgresql",
+    "firebase",
+    "nginx",
+    "vercel",
+    "testinglibrary",
+    "jest",
+    "cypress",
+    "docker",
+    "git",
+    "jira",
+    "github",
+    "gitlab",
+    "visualstudiocode",
+    "androidstudio",
+    "sonarqube",
+    "figma",
+  ];
+
+  const images = slugs.map((slug) => `https://cdn.simpleicons.org/${slug}/${slug}`);
+
+  return (
+    <div className="relative flex size-full items-center justify-center overflow-hidden">
+      <IconCloud images={images} />
     </div>
   );
 }
